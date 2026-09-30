@@ -6,6 +6,7 @@ name = "Fear Effect 2: Retro Helix"
 id = "SLUS-01266"
 players = 2
 exe = "disc/SLUS_012.66"
+disc = "disc/Fear Effect 2 - Retro Helix (USA) (Disc 1) (Rev 1).cue"
 # Verified as one program on N images (verify_disc_set.py).
 # Disc 1 boots; the rest are data. The runtime builds its disc
 # roster from this list and mounts the SELECTED one (remembered
@@ -16,6 +17,12 @@ discs = [
     "disc/Fear Effect 2 - Retro Helix (USA) (Disc 2) (Rev 1).cue",
     "disc/Fear Effect 2 - Retro Helix (USA) (Disc 3) (Rev 1).cue",
     "disc/Fear Effect 2 - Retro Helix (USA) (Disc 4) (Rev 1).cue",
+]
+disc_serials = [
+    "SLUS-01266",
+    "SLUS-01275",
+    "SLUS-01276",
+    "SLUS-01277",
 ]
 load_address = "0x80010000"
 entry_pc = "0x8005C130"
@@ -28,15 +35,24 @@ out_dir = "disc"
 bin_name = "Fear Effect 2 - Retro Helix (USA) (Disc 1) (Rev 1).bin"
 cue_name = "Fear Effect 2 - Retro Helix (USA) (Disc 1) (Rev 1).cue"
 boot_exe = "SLUS_012.66"
-known_sizes = [746844672]
+known_sizes = [746844672, 695222976, 641439792, 715087968]
 known_md5 = [
   "0258657dd944a139fdddc81345a6d9ee",
+  "74d55be5e2a322a0124efff6fd1f86f2",
+  "5523b1309cbcca233544d9a7b4663543",
+  "7302dbf75f570466e1453b1337fd5a79",
 ]
 known_sha1 = [
   "86a470f414de3f7af60c06fdc065f4f32015650c",
+  "c80cf3589ef9f05afa19db9a003eeb061ac947e8",
+  "2ea416bcb6692a178dfde0c36df0ac949d488a1f",
+  "1665f4c71e1c399f5a6f4b9c33a979ee0cad8afd",
 ]
 known_crc32 = [
   "156bfdb4",
+  "746ad7c9",
+  "fc16649d",
+  "8d9b31eb",
 ]
 
 [recompiler]
